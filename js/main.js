@@ -1,11 +1,18 @@
-const kiloMetri = prompt("Quanti km devi percorrere?");
+const kiloMetri = parseInt(prompt("Quanti km devi percorrere?"));
 
 console.log(kiloMetri);
 
-const eta = prompt("Quanti anni hai ?")
+const eta = parseInt(prompt("Quanti anni hai ?"));
 
 console.log(eta);
 
-let ticketCost = kiloMetri * 0.21;
+let baseTicketCost = kiloMetri * 0.21;
 
-console.log(ticketCost);
+console.log(baseTicketCost);
+
+let newTicketcost;
+
+if (eta > 18){
+  newTicketcost = baseTicketCost - (baseTicketCost * 20 / 100);
+}
+console.log(newTicketcost);
