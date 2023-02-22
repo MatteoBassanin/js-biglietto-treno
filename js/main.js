@@ -13,11 +13,12 @@ console.log(baseTicketCost);
 let newTicketcost;
 
 
-if (eta < 18){
+if (eta <= 18){
     newTicketcost = baseTicketCost - (baseTicketCost * 20 / 100);   
-}else if (eta > 65){
+}else if (eta >= 65){
     newTicketcost = baseTicketCost - (baseTicketCost * 40 / 100);   
 }
+
 
 newTicketcost = newTicketcost.toFixed(2);
 
