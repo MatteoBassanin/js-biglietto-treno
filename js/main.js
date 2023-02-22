@@ -12,7 +12,11 @@ console.log(baseTicketCost);
 
 let newTicketcost;
 
-if (eta > 18){
-  newTicketcost = baseTicketCost - (baseTicketCost * 20 / 100);
+if (eta < 18){
+    newTicketcost = baseTicketCost - (baseTicketCost * 20 / 100);
+    console.log(newTicketcost);
+}else if (eta > 65){
+    newTicketcost = baseTicketCost - (baseTicketCost * 40 / 100);
+    console.log(newTicketcost);
 }
-console.log(newTicketcost);
+
