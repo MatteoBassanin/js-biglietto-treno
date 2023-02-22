@@ -18,7 +18,9 @@ if (eta <= 18){
 }else if (eta >= 65){
     newTicketcost = baseTicketCost - (baseTicketCost * 40 / 100);   
 }
-
+else{
+    newTicketcost = baseTicketCost;
+}
 
 newTicketcost = newTicketcost.toFixed(2);
 
